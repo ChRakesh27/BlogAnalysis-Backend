@@ -5,7 +5,8 @@ const { memoizeWithExpirationCustom } = require('../services/cache');
 function blogAnalysis(blogs) {
     const len = blogs.length;
 
-    const title = cacheKey = 'privacy'
+    const title = 'privacy'
+    const cacheKey = title
     const privacyCount = memoizedFilter(cacheKey, blogs, title).length;
 
     const unqBlogs = uniqBy(blogs, 'title');

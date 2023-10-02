@@ -7,9 +7,9 @@ const memoizeForBlogsWithExpiration = (func, key) => {
     const memorizer = memoize(func, () => key)
 
     setInterval(() => {
-        console.log('--------------')
         memorizer.cache.clear();
         cache.clear()
+        console.log(`--- cache cleared after ${DefaultExpirationTimeMs} milliseconds  ---`)
     }, DefaultExpirationTimeMs);
 
     return memorizer

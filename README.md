@@ -16,8 +16,8 @@ Core package used in the project
 #### Clone the repo
 
 ```bash
-git clone https://github.com/ChRakesh27/backendassignment.git
-cd backendassignment
+git clone https://github.com/ChRakesh27/BlogAnalysis-Backend.git
+cd BlogAnalysis-Backend
 ```
 
 ### Install dependencies
@@ -34,16 +34,20 @@ Run start will start the server with nodemon in development mode. server start o
 npm run start
 ```
 
-### Run Docker in local machine
+#### Lint check
 
-Run the below docker command to run mongo.
-
-```bash
-docker-compose up -d mongodb
-```
-
-To stop mongo docker container
+to check code lint. it uses eslint standard recommended rules
 
 ```bash
-docker-compose down
+npm run lint
 ```
+
+### Import postman collection to test the APIs
+
+- [blog-analysis-postman-collection](./postman_collection/Blog-Analysis.postman_collection.json)
+
+### Benchmark API test result from Postman
+
+- benchmark test runs both API
+
+![benchmark_test_results](./postman_collection/benchmark_test_results.png)

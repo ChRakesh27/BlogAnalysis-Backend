@@ -1,0 +1,82 @@
+{
+	"id": "d522b8c2-b966-4580-8285-5c50ec35446c",
+	"name": "Blog-Analysis",
+	"timestamp": "2023-10-02T15:33:32.824Z",
+	"collection_id": "25093580-1ae5f912-d39f-41dd-a8fe-9df0f5cc466f",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": "1000",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-10-02T15:33:19.914Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "fe241521-36c3-475a-9d6d-5ea1af4bcc8f",
+			"name": "blog-stats",
+			"url": "http://localhost:3000/api/blog-stats",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				973,
+				10,
+				10,
+				7,
+				9
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "75c849db-3a63-461a-a926-05ef3f6e9806",
+			"name": "blog-search",
+			"url": "http://localhost:3000/api/blog-search?query=privacy",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10,
+				6,
+				753,
+				6,
+				6
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 1790,
+	"collection": {
+		"requests": [
+			{
+				"id": "fe241521-36c3-475a-9d6d-5ea1af4bcc8f",
+				"method": "GET"
+			},
+			{
+				"id": "75c849db-3a63-461a-a926-05ef3f6e9806",
+				"method": "GET"
+			}
+		]
+	}
+}

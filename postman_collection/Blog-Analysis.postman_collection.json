@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "1ae5f912-d39f-41dd-a8fe-9df0f5cc466f",
+		"name": "Blog-Analysis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25093580"
+	},
+	"item": [
+		{
+			"name": "blog-stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/blog-stats"
+			},
+			"response": []
+		},
+		{
+			"name": "blog-search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/blog-search?query=privacy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog-search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "privacy"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api', blogRouter)
 // catch 404 and forward to error handler
-app.all('*', function (req, res, next) {
+app.all('*', function (req, res) {
   res.status(404).json({
     error: "API not found",
   })
