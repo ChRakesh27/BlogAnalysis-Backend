@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 if (!process.env.HASURA_ADMIN_SECRET) {
-    console.error("missing environment variable HASURA_ADMIN_SECRET")
+    console.error("missing HASURA_ADMIN_SECRET environment variable .env file")
     process.exit(1)
 }
 

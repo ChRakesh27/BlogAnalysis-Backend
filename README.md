@@ -20,6 +20,11 @@ git clone https://github.com/ChRakesh27/BlogAnalysis-Backend.git
 cd BlogAnalysis-Backend
 ```
 
+### Create `.env`
+
+- using [dotenv](https://www.npmjs.com/package/dotenv) package to get environment variables.
+- create new `.env` file from given `.env-sample` and populate `HASURA_ADMIN_SECRET` variable to run the project
+
 ### Install dependencies
 
 ```bash
@@ -28,10 +33,18 @@ npm install
 
 #### Run local server
 
-Run start will start the server with nodemon in development mode. server start on `http://localhost:3000`
+Run start will start the server with node in development mode. server start on `http://localhost:3000`
 
 ```bash
 npm run start
+```
+
+#### Run local server to run with nodemon
+
+Run start will start the server with nodemon in development mode. server start on `http://localhost:3000`
+
+```bash
+npm run start:dev
 ```
 
 #### Lint check

@@ -19,6 +19,12 @@ router.get('/blog-stats', async (req, res, next) => {
 router.get('/blog-search', async (req, res, next) => {
     try {
         const queryStr = req.query.query;
+
+        if (!queryStr?.trim()) {
+            res.status(400).send({ message: "missing `query` property in the url" })
+            return
+        }
+
         const cacheKey = queryStr
 
         const blogs = await getBlogs();
